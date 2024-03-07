@@ -3,10 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-  entry: './src/script.js', 
+  entry: {
+    scriptA: ['./src/scriptA.js'], 
+    scriptB: ['./src/scriptB.js'], 
+    stylesA: ['./src/styles.css'],
+    stylesB: ['./src/stylesB.css']
+  },
   output: {
     path: path.resolve(__dirname, 'dist'), 
-    filename: 'bundle.js' 
+    filename: '[name].js' 
   },
   module: {
     rules: [
@@ -35,10 +40,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/interfaceA.html',
       filename: 'interfaceA.html',
+      chunks: ['scriptA', 'stylesA']
     }),
     new HtmlWebpackPlugin({
       template: './src/interfaceB.html',
       filename: 'interfaceB.html',
+      chunks: ['scriptB', 'stylesB']
     }),
   ],
   devServer: {
