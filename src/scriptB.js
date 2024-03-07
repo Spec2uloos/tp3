@@ -1,4 +1,4 @@
-import './styles.css';
+import './stylesB.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 document.addEventListener('DOMContentLoaded', function() {

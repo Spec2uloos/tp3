@@ -2,11 +2,19 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
   }
+  header {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+  }
   h1 {
     color: #030000;
+    margin-top: 20px;
+    text-align: center;
   }
   h2 {
     color: #630707;
+    text-align: center;
   }
   h3 {
     color: #8a0e0e;

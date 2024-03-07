@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "rm -rf dist && webpack --config webpack.config.js --mode production"
   },
   "keywords": [],
   "author": "",
