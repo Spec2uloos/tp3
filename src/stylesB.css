@@ -37,13 +37,22 @@ footer {
 
 .block {
     background-color: var(--light-gray);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-item {
     border: 2px solid var(--border-gray);
     background-color: var(--dark-gray);
     box-shadow: 15px 15px 25px var(--dark-gray);
-    margin: 10px
+    margin: 10px;
 }
 
 .left-align {
@@ -52,4 +61,25 @@ footer {
 
 .row {
     margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {       
+    .block {
+        order: 0;
+        background-color: var(--light-gray);
+        height: 8rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .text {
+        order: 1;
+        margin-top: 10px;
+        margin-bottom: -40px;
+        padding: 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
