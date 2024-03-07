@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     scriptA: ['./src/scriptA.js'], 
     scriptB: ['./src/scriptB.js'], 
-    stylesA: ['./src/styles.css'],
+    stylesA: ['./src/stylesA.css'],
     stylesB: ['./src/stylesB.css']
   },
   output: {
