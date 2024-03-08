@@ -10,73 +10,82 @@
 
 <body>
   <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <ul class="container justify-content-center">
-      <a class="navbar-brand" href="#">
-        <img src="./asset/logo.png" alt="Logo" class="custom-logo">
-      </a>
-    </ul>
-        <ul class="container-fluid justify-content-center">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active"  aria-current="page" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">À propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nous Joindre</a>
-            </li>
-          </ul>
+<!--Logo centré -->
+    <h1> LOGO</h1>
+<!--Navbar centré et responsive-->  
+    <nav>  
+      </ul>
+      <ul class="container-fluid justify-content-center mb-2 ">
+        <ul class="nav justify-content-center flex-column flex-sm-row">
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nous Joindre</a>
+          </li>
         </ul>
-  </nav>
+      </ul>
+    </nav>
   </header>
-
-
+  
+<!--Contenu de la page responsive -->
   <main>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="left-column">
+
+    <div class="row">
+      <div class="col-sm-6 col-lg-8 flex-column flex-sm-row">
+        <div class="row">
+          <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Article 1</h2>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
           <div class="card">
             <div class="card-body">
               <h2 class="card-title">Article 1</h2>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-             <h2 class="card-title">Aticle 2</h2>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
+        </div>
       </div>
 
-      <div class="right-column">
-          <div class="search-container">
+<!--cette partie est masquée pour les petites -écrans : j'ai ajouté le d-none d-sm-block pour cela-->
+      <div class="col-lg-4 d-none d-sm-block ">
+        <div class="row">
+          <div class="search-container ">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
             <span class="input-group-text border-0" id="search-addon">
               <i class="fas fa-search"></i>
             </span>
           </div>
-
-        <div class="card-Categories">
-          <h3 class="card-text">Catégories</h3> 
-          <li> lien vers A</li>
-          <li> lien vers B</li>
-          <li> lien vers C</li>
-          <li> lien vers C</li>
-          <li> lien vers D</li>
-          <li> lien vers E</li>
-          <li> lien vers F</li>
         </div>
-
-
-
-      
+        <div class="row">
+          <div class="card-Categories">
+            <h3 class="card-text">Catégories</h3> 
+            <li> lien vers A</li>
+            <li> lien vers B</li>
+            <li> lien vers C</li>
+            <li> lien vers C</li>
+            <li> lien vers D</li>
+            <li> lien vers E</li>
+            <li> lien vers F</li>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
+
+<!--Footer-->
 
   <footer class="bg-body-tertiary text-center text-lg-start">
     <!-- Copyright -->
@@ -86,5 +95,6 @@
     </div>
     <!-- Copyright -->
   </footer>
+
 </body>
 </html>
