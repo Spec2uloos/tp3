@@ -1,65 +1,79 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  header {
-    background-color: lightgray;
-    padding: 10px;
-    text-align: center;
-  }
-  h1 {
-    color: #030000;
-    margin-top: 20px;
-    text-align: center;
-  }
-  h2 {
-    color: #630707;
-    text-align: center;
-  }
-  h3 {
-    color: #8a0e0e;
-  }
-  p {
-    color: #666;
-  }
-  a {
-    color: #030000
-  }
-  .container {
-    display: flex;
-  }
-.custom-logo{
-  max-height: 40px;
-  position: absolute;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 .search-container {
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 5px;
-  border-radius: 5px;
-  border: 1px solid #f0e7e7;
+  border: 1px solid #ddd; /* Bordure de la carte */
+  border-radius: 10px; /* Coins arrondis de la carte */
+  padding: 5px; /* Espacement intérieur de la carte */
+  background-color: #fff; /* Couleur de fond de la carte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la carte */
+  transition: transform 0.3s ease; 
+  max-width: 500px;
+
 }
-.card-Categories{
-  border: 1px solid #ccc; /* Bordure de la carte */
+.card-Categories {
+  border: 1px solid #ddd; /* Bordure de la carte */
   border-radius: 10px; /* Coins arrondis de la carte */
   padding: 20px; /* Espacement intérieur de la carte */
   background-color: #fff; /* Couleur de fond de la carte */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la carte */
+  transition: transform 0.3s ease; 
+  max-width: 500px;
 }
 
-.left-column, .right-column {
-  width: 50%; /* Chaque colonne occupe 50% de la largeur de la page */
-  padding: 20px;
+.card-Categories:hover {
+  transform: translateY(-5px); /* Décalage vers le haut au survol */
 }
 
-/* Styles supplémentaires pour la mise en page */
-.left-column {
-  background-color: #f1f1f1; /* Couleur de fond de la colonne gauche */
+.card-footer i, .card-footer a {
+  margin-right: 30px; 
 }
 
-.right-column {
-  background-color: #e9e9e9; /* Couleur de fond de la colonne droite */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #030000;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #630707;
+  text-align: center;
+}
+
+h3 {
+  color: #8a0e0e;
+}
+
+p {
+  color: #666;
+}
+
+a {
+  color: #030000;
+}
+
+/* Styles pour le footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
 }
