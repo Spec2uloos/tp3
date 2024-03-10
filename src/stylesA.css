@@ -1,3 +1,14 @@
+:root {
+  --black: #030000;
+  --black-shadow: rgba(0, 0, 0, 0.1);
+  --dark-red: #8a0e0e;
+  --darker-red: #630707;
+  --gray: #666;
+  --light-gray: #ddd;
+  --lighter-gray: #f0f0f0;
+  --white: #fff;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -5,21 +16,21 @@
   justify-items: center;
 }
 .search-container {
-  border: 1px solid #ddd; /* Bordure de la carte */
+  border: 1px solid var(--light-gray); /* Bordure de la carte */
   border-radius: 10px; /* Coins arrondis de la carte */
   padding: 5px; /* Espacement intérieur de la carte */
-  background-color: #fff; /* Couleur de fond de la carte */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la carte */
+  background-color: var(--white); /* Couleur de fond de la carte */
+  box-shadow: 0 4px 8px var(--black-shadow); /* Ombre de la carte */
   transition: transform 0.3s ease; 
   max-width: 500px;
 
 }
 .card-Categories {
-  border: 1px solid #ddd; /* Bordure de la carte */
+  border: 1px solid var(--light-gray); /* Bordure de la carte */
   border-radius: 10px; /* Coins arrondis de la carte */
   padding: 20px; /* Espacement intérieur de la carte */
-  background-color: #fff; /* Couleur de fond de la carte */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la carte */
+  background-color: var(--white); /* Couleur de fond de la carte */
+  box-shadow: 0 4px 8px var(--black-shadow); /* Ombre de la carte */
   transition: transform 0.3s ease; 
   max-width: 500px;
 }
@@ -34,38 +45,38 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: var(--lighter-gray);
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: lightgray;
+  background-color: var(--light-gray);
   padding: 10px;
   text-align: center;
 }
 
 h1 {
-  color: #030000;
+  color: var(--black);
   margin-top: 20px;
   text-align: center;
 }
 
 h2 {
-  color: #630707;
+  color: var(--darker-red);
   text-align: center;
 }
 
 h3 {
-  color: #8a0e0e;
+  color: var(--dark-red);
 }
 
 p {
-  color: #666;
+  color: var(--gray);
 }
 
 a {
-  color: #030000;
+  color: var(--black);
 }
 
 /* Styles pour le footer */
@@ -73,7 +84,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: var(--black-shadow);
   text-align: center;
   padding: 10px 0;
 }
