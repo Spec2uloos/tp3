@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interface A</title>
+  <title>Votre Projet</title>
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!--librairie front awesome-->
   <script src="https://kit.fontawesome.com/78e94e9576.js" crossorigin="anonymous"></script>
@@ -16,7 +16,8 @@
     <h1>LOGO</h1>
 <!--Navbar centré et responsive-->  
     <nav>  
-      <ul class="container-fluid justify-content-center mb-2">
+      </ul>
+      <ul class="container-fluid justify-content-center mb-2 ">
         <ul class="nav justify-content-center flex-column flex-sm-row">
           <li class="nav-item">
             <a class="nav-link active"  aria-current="page" href="#">Accueil</a>
@@ -37,10 +38,11 @@
   
 <!--Contenu de la page responsive -->
   <main>
+
     <div class="row">
-      <section class="col-sm-6 col-lg-8 flex-column flex-sm-row">
+      <div class="col-sm-6 col-lg-8 flex-column flex-sm-row">
         <div class="row">
-          <article class="card">
+          <div class="card">
             <div class="card-header">Article 1</div>
             <div class="card-body">
               <h5 class="card-title">Titre de l'article 1</h5>
@@ -51,35 +53,36 @@
               <i class="fas fa-user"> Auteur </i>
               <a href="#" class="btn btn-primary" data-mdb-ripple-init>Lire la suite</a>
             </div>
-          </article>
+          </div>
         </div>
+
         <div class="row">
-          <article class="card">
+          <div class="card">
             <div class="card-header">Article 2</div>
             <div class="card-body">
               <h5 class="card-title">Titre de l'article 2</h5>
               <p class="card-text">"La technologie moderne a profondément transformé notre manière d'interagir avec le monde qui nous entoure. Des smartphones aux réseaux sociaux, en passant par l'intelligence artificielle et l'Internet des objets, nos vies sont devenues de plus en plus interconnectées et facilitées. Cependant, cette connectivité accrue s'accompagne également de nouveaux défis, tels que la protection de la vie privée, la sécurité des données et l'impact environnemental. Il est donc crucial de trouver un équilibre entre les avantages et les inconvénients de la technologie moderne, tout en veillant à ce qu'elle soit utilisée de manière éthique et responsable."</p>
-              
             </div>
             <div class="card-footer text-muted">
               <i class="fas fa-calendar-alt"> Date </i> 
               <i class="fas fa-user"> Auteur </i>
               <a href="#" class="btn btn-primary" data-mdb-ripple-init>Lire la suite</a>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="col-lg-4">
-        <div class="row">
-          <div class="search-container">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <span class="input-group-text border-0" id="search-addon">
-              <i class="fas fa-search"></i>
-            </span>
           </div>
         </div>
+      </div>
+
+      <div class="col-lg-4">
         <div class="row">
+          <div class="input-group rounded">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+</div>
+        </div>
+        <div class="row">
+          <!--cette partie est masquée pour les petites -écrans : j'ai ajouté le d-none d-sm-block pour cela-->
           <div class="card-Categories d-none d-sm-block">
             <h3 class="card-text">Catégories</h3> 
             <li> lien vers A</li>
@@ -91,7 +94,7 @@
             <li> lien vers F</li>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
   </main>
@@ -100,7 +103,7 @@
 
   <footer class="bg-body-tertiary text-center text-lg-start">
     <!-- Copyright -->
-    <div class="text-center p-3">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2020 Copyright:
       <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
