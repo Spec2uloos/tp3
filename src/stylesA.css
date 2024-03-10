@@ -81,7 +81,7 @@ a {
 
 /* Styles pour le footer */
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: var(--black-shadow);
