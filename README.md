@@ -10,7 +10,9 @@ Ce devoir vise à créer deux interfaces web adaptatives (interface A et interfa
 ```
 npm i
 npm run build
+npm run start
 ```
+Dans l'interface de webpack-dev-server, choisir interfaceA.html ou interfaceB.html pour les visualiser.
 ## Auteurs
 
 - Mouna Aneddame - Anem1501 
