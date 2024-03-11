@@ -22,8 +22,8 @@
     "webpack-dev-server": "^5.0.2"
   },
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "rm -rf dist && webpack --config webpack.config.js --mode production"
+    "build": "rm -rf dist && webpack --config webpack.config.js --mode production",
+    "start": "webpack-dev-server --mode development"
   },
   "keywords": [],
   "author": "",
